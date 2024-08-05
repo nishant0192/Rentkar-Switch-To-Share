@@ -8,22 +8,22 @@ const initialState = {
 };
 
 export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
-  const response = await axios.get('http://localhost:5000/todos');
+  const response = await axios.get('https://rentkar-switch-to-share.onrender.com/todos');
   return response.data;
 });
 
 export const addTodo = createAsyncThunk('todos/addTodo', async (newTodo) => {
-  const response = await axios.post('http://localhost:5000/todos', newTodo);
+  const response = await axios.post('https://rentkar-switch-to-share.onrender.com/todos', newTodo);
   return response.data;
 });
 
 export const updateTodo = createAsyncThunk('todos/updateTodo', async ({ id, updatedTodo }) => {
-  const response = await axios.put(`http://localhost:5000/todos/${id}`, updatedTodo);
+  const response = await axios.put(`https://rentkar-switch-to-share.onrender.com/todos/${id}`, updatedTodo);
   return response.data;
 });
 
 export const deleteTodo = createAsyncThunk('todos/deleteTodo', async (id) => {
-  await axios.delete(`http://localhost:5000/todos/${id}`);
+  await axios.delete(`https://rentkar-switch-to-share.onrender.com/todos/${id}`);
   return id;
 });
 

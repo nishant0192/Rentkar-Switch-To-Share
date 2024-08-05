@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/todos';
+const API_URL = 'https://rentkar-switch-to-share.onrender.com';
 
 const fetchTodos = () => axios.get(API_URL);
 const addTodo = (newTodo) => axios.post(API_URL, newTodo);
