@@ -23,7 +23,7 @@ const TodoForm = () => {
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Enter todo"
-        className='border-[2px] rounded-[10px] mx-10 mb-4 px-3 border-black'
+        className='border-[2px] rounded-[10px] mx-10 mb-4 px-3 border-black text-black'
       />
       <button type="submit">Add Todo</button>
     </form>
